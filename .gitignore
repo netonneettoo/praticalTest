@@ -8,3 +8,4 @@ Homestead.yaml
 .env
 *.iml
 composer.lock
+.vagrant

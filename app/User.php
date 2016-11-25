@@ -26,4 +26,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function physicalPerson()
+    {
+        return $this->hasOne(PhysicalPerson::class);
+    }
+
+    public function legalPerson()
+    {
+        return $this->hasOne(LegalPerson::class);
+    }
 }
